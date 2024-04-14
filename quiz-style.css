@@ -88,7 +88,7 @@ h1 {
 }
 .instr {
     text-align: center;
-    margin-top: 20%;
+    margin-top: 50%;
     position: absolute;
 }
 #QuizQn{
@@ -146,19 +146,21 @@ h1 {
 /* WIDGET */
 .widget-wrap {
     width: 70%;
-    height: 70%;
-    padding: 30px;
+    max-height: 70%;
+    padding: 20px;
     border-radius: 20px;
     background: rgba(20, 201, 207, 0.4);
     margin: auto;
     position: absolute;
     margin-left: 15%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
   /* FOOTER */
   #code-boxx {
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 20%;
+    margin-bottom: 0;
+    text-align: center;
   }
   #code-boxx a {
     display: inline-block;
