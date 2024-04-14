@@ -25,6 +25,9 @@
     top: 20%;
     
 }
+h1 {
+    text-align: center;
+}
 /*.side-bar ::after {
     content: '';
     background: url("healthy-lifestyle-quotes.jpg");
@@ -36,13 +39,27 @@
 }*/
 
 .dashboard {
-    display: block;
-    position: static;
+    /*display: flex;
+    align-items: center;*/
+    /*justify-content: center;*/
+   /* background-image: url(https://images.pexels.com/photos/1005417/pexels-photo-1005417.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;*/
+    
+    display: grid;
+    position: fixed;
     width: 75%;
     height: 100%;
     margin-left: 25%;
     top: 20%;
+    
+
     /*background-image: linear-gradient(to right, black, grey, rgb(171, 159, 159));*/
+}
+#back {
+    height: 100%;
+    width: 100%;
 }
 .logo {
     height: 17%;
@@ -53,11 +70,16 @@
     margin-top: 10px;
 }
 .header {
-    margin: auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+    position: absolute;
 }
 #header {
     opacity: 10%;
     margin-left: 15%;
+    height: 100%;
+    width: 80%;
 }
 #run {
     opacity: 15%;
@@ -71,15 +93,20 @@
 }
 #QuizQn{
     padding: 20px;
-    background: #4c93ba;
+    background: #ba4c99;
     color: #fff;
     font-size: 24px;
     border-radius: 10px;
 }
 
-#quizwrap {
-    max-width: 600px;
-    margin: 0 auto;
+#quizWrap {
+    max-width: 100%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
 }
 
 #quizAns{
@@ -116,25 +143,17 @@
     box-sizing: border-box;
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    color: #fc0804 ;
-    background-image: url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODAwMTA1MQ&ixlib=rb-1.2.1&q=85);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-     
-}
 /* WIDGET */
 .widget-wrap {
-    width: 600px;
+    width: 70%;
+    height: 70%;
     padding: 30px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(20, 201, 207, 0.4);
+    margin: auto;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 15%;
 }
   /* FOOTER */
   #code-boxx {
@@ -146,6 +165,6 @@
     border: 0;
     padding: 5px;
     text-decoration: none;
-    background: #b90a0a;
+    background: #d0df00;
     color: #fff;
-  }
+}
