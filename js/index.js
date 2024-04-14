@@ -8,7 +8,7 @@ var quiz = {
         {
             q: "Which of these liquids are you supposed to drink less?",
             o: ["Sparkling water", "Coffee", "Water", "Sugary Drinks"], //array of options
-            a: 3, // arrays start with 0, so answer is 70 meters
+            a: 3, // array starts at 0 so the answer is sugary drinks
         },
 
         {
@@ -18,9 +18,9 @@ var quiz = {
         },
 
         {
-            q: "Which fruit has color lighting?",
+            q: "Which fruit is also a color?",
             o: ["Lemon", "Orange", "Apple", "Avocado"],
-            a: 0,
+            a: 1,
 
         },
 
@@ -41,6 +41,36 @@ var quiz = {
             o: ["Social media 24/7", "Isolation", "Exercise and good diet", "Crying"],
             a: 2,
         },
+
+        {
+            q: "Which foods are important for the development of healthy, strong bones?",
+            o: ["Tomatoes, biscuits, butter", "Fish, Chicken, Eggs", "Cheese, Milk, Yogurt", "Potatoes,fish, Cucumbers"],
+            a: 2,
+        },
+
+        {
+            q: "The best way to keep a healthy you is:",
+            o: ["Going on a very low calorie diet", "Mixing eating with other activites", "Using the Food Pyramid", "Avoiding eating fat"],
+            a: 2,
+        },
+        
+        {
+            q: "How can't you help the environment?",
+            o: ["Driving your own vehicle", "Turning off the tap while you are brushing your teeth", "Bringing your own cloth bag to the shops", "Turning off the lights when you leave a room"],
+            a: 0,
+        },
+
+        {
+            q: "What is having good personal hygiene a good prevention of?",
+            o: ["Losing hair", "Tooth decay", "Looking ugly", "Diseases"],
+            a: 3,
+        },
+
+        {
+            q: "When are good times to brush your teeth during the day?",
+            o: ["After eating sweets", "In the morning, after each meal and before going to bed", "Whenever you want to", "Before you eat, after you eat, and before going to bed"],
+            a: 1,
+        }
 
     ],
 
@@ -70,6 +100,9 @@ var quiz = {
         quiz.hAns = document.createElement("div");
         quiz.hAns.id = "quizAns";
         quiz.hWrap.appendChild(quiz.hAns);
+
+        //Restart button
+        document.getElementById("restart").addEventListener("click", quiz.reset);
  
         // (B4) GO!
         quiz.draw();

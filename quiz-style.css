@@ -91,11 +91,11 @@ h1 {
     margin-top: 20%;
     position: absolute;
 }
-#QuizQn{
-    padding: 20px;
+#quizQn{
+    padding: 10px;
     background: #ba4c99;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 10px;
 }
 
@@ -167,4 +167,16 @@ h1 {
     text-decoration: none;
     background: #d0df00;
     color: #fff;
+}
+
+#restart{
+    cursor: pointer;
+    background: #ba4c99;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 200px;
+
 }
