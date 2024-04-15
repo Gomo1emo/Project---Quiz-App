@@ -44,7 +44,7 @@ var quiz = {
 
         {
             q: "Which foods are important for the development of healthy, strong bones?",
-            o: ["Tomatoes, biscuits, butter", "Fish, Chicken, Eggs", "Cheese, Milk, Yogurt", "Potatoes,fish, Cucumbers"],
+            o: ["Tomatoes, biscuits, butter", "Fish, Chicken, Eggs", "Cheese, Milk, Yogurt", "Potatoes, fish, Cucumbers"],
             a: 2,
         },
 
